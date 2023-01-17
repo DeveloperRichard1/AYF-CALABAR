@@ -1,0 +1,150 @@
+
+header {
+    background-color: transparent;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-links a {
+
+  font-size: 300px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.flex-ver-top {
+  align-items: flex-start;
+}
+
+.scale-effect:active {
+  transform: scale(0.88);
+  transition: 0.2s;
+}
+
+.nav-con {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1085px) {
+  .nav-con {
+    width: 90%;
+  }
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header .logo img {
+  height: 60px;
+}
+
+.header .main-navgation {
+  flex: 1;
+  gap: 0;
+}
+
+@media (max-width: 1085px) {
+  .header .main-navgation {
+    position: absolute;
+    top: 10%;
+    left: 50%;  
+    transform: translateX(-50%);
+    width: 70%;
+    height: 0;
+    z-index: 999999;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 33.33333px;
+    border-radius: 10px;
+    background-color: #3b3054;
+    transition: height 0.3s;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .main-navgation {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .header .main-navgation {
+    width: 100%;
+  }
+}
+
+@media (max-width: 280px) {
+  .header .main-navgation {
+    padding: 0 25px;
+  }
+}
+
+.header .main-navgation > div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 1085px) {
+  .header .main-navgation > div {
+    flex-direction: column;
+    width: 100%;
+    padding: 33.33333px 0;
+  }
+}
+
+@media (max-width: 280px) {
+  .header .main-navgation > div {
+    padding: 25px 0;
+  }
+}
+
+.header .main-navgation div:first-child {
+  border-bottom: 1px solid white;
+}
+
+
+.header .burger-menu {
+  font-size: 22px;
+  color: #9e9aa7;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1085px) {
+  .header .burger-menu {
+    display: block;
+  }
+}
+
+.main-navgation a {
+  font-weight: 700;
+  font-size: 14px;
+  color: #9e9aa7;
+  transition: 0.3s;
+}
+
+.main-navgation a:hover {
+  color: #232127;
+}
+
+@media (max-width: 1085px) {
+  .main-navgation a {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+  }
+  .main-navgation a:hover {
+    color: #2acfcf;
+  }
+}
+

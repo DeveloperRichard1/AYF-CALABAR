@@ -1,0 +1,105 @@
+<div class="container mt-5">
+
+    <form class="shadow bg-white p-4" action="blah.php" method="post">
+      <div class="form-group">
+        <div class="text-center mt-5">
+          <h2 class="text-uppercase text-primary">
+            Register for Ascension 2023
+          </h2>
+        </div>
+        <br />
+        <br>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="fullName" style="font-size: 17px;font-weight: bold;text-transform: uppercase;"
+                class="form-label">Full Name <span class="text-danger">*</span></label>
+              <input type="text" placeholder="Richard Godswill" class="form-control" name="fullName" required />
+              <!-- small class="one text-danger" style="font-size: 10px;font-weight: bolder;"></!-->
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="number" style="font-size: 17px;font-weight: bold;text-transform: uppercase;"
+                class="form-label">Phone Number <span class="text-danger">*</span></label>
+              <input type="text" placeholder="08100790074"
+                pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" class="form-control" id="number"
+                required />
+              <!-- small class="two text-danger" style="font-size: 10px;font-weight: bolder;"></@!small -->
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="email" style="font-size: 17px;font-weight: bold;text-transform: uppercase;"
+                class="form-label">Email Address <span class="text-danger">*</span></label>
+              <input type="email" placeholder="youremail@gmail.com" class="form-control" id="email" required />
+              <!-- small class="three text-danger" style="font-size: 10px;font-weight: bolder;"></!-->
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="validationDefault04" style="font-size: 17px;font-weight: bold;text-transform: uppercase;"
+                class="form-label">Archdeaconry/Deanery <span class="text-danger">*</span></label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value>Select</option>
+                <option value="1">Calabar Archdeaconry</option>
+                <option value="2">Ikom Archdeaconry</option>
+                <option value="3">Abi Missionary Archdeaconry</option>
+                <option value="4">Yakurr Missionary Archdeaconry</option>
+                <option value="5">Yala - East Missionary Archdeaconry</option>
+                <option value="6">Yala - West Missionary Archdeaconry</option>
+                <option value="7">Obubra Missionary Archdeaconry</option>
+                <option value="8">Obubu Missionary Archdeaconry</option>
+                <option value="9">Cathedral Archdeaconry</option>
+                <option value="10">Akamkpa Missionary Archdeaconry</option>
+                <option value="11">Christ Church Deanery</option>
+                <option value="12">Ascension Deanery</option>
+                <option value="13">Efut Deanery</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="validationDefault04" style="font-size: 17px;font-weight: bold;text-transform: uppercase;"
+                class="form-label">
+                category <span class="text-danger">*</span></label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Select</option>
+                <option value="1">Youth Stars</option>
+                <option value="2">Adults</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="sex" style="font-size: 17px;font-weight: bold;text-transform: uppercase;" class="form-label">Sex
+              <span class="text-danger">*</span></label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radio-stacked" id="validationFormCheck2" required>
+              <label class="form-check-label" for="validationFormCheck2">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radio-stacked" id="validationFormCheck2" required>
+              <label class="form-check-label" for="validationFormCheck2">
+                Female
+              </label>
+            </div>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="accomdation" />
+            <label class="form-check-label" for="accomdation">I want free accomdation <span
+                class="text-danger">*</span></label>
+          </div>
+          <button type="submit" class="btn btn-primary">Proceed to pay</button>
+          <div class="text-center mt-5">
+
+          </div>
+    </form>
+  </div>
+
+  </div>
+  <!-- form-->
